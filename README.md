@@ -39,3 +39,12 @@
         $ git remote add origin https://github.com/[본인의 github username]/git-test.git
     ```
 7. 이후 노션 안내에 따라 Test를 진행해주세요.
+
+Git command 정리pammain
+- `git init`: git을 사용하기위해 새로운 저장소를 생성하는 명령어이다.
+- `git remote add origin <remote repository url>` : remote저장소에 origin 이라는 별칭을 붙이고 origin을 사용해 원격 저장소를 가리킬 수 있다.
+- `git add <file name>` : 해당 파일의 수정사항만 반영하여 git push할 준비를 한다. (git add . 는 모든 파일의 수정사항을 반영한다.)
+- `git commit` : git add 를 한 뒤 git push 하기 전 어떤 작업을 했는지 commit 메세지로 남길 수 있다.(commit 메세지를 보고 이전의 작업상황을 볼 수 있기에 commit 메세지는 컨벤션에 따라 간결하게 작성해야한다.)
+- `git push origin <branch name>` : 해당 브랜치에 수정된 파일이 업로드 된다.
+- `git pull origin <branch name>` : 원격에 저장된 프로젝트 현재 상태를 다운받고 현재 위치한 브랜치로 병합한다.
+- `git merge <branch name>` : 해당 브랜치를 현재 경로에 병합한다.
